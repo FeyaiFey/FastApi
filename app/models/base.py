@@ -9,7 +9,7 @@ class BaseModel(Base):
     """所有模型的基类"""
     __abstract__ = True
 
-    Id = Column(UNIQUEIDENTIFIER, primary_key=True, default=uuid.uuid4, index=True)
+    Id = Column(UNIQUEIDENTIFIER, primary_key=True, default=uuid.uuid1, index=True)
     CreatedAt = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
     UpdatedAt = Column(DateTime(timezone=True), onupdate=func.now(), nullable=True)
 

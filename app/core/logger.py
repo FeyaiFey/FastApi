@@ -18,5 +18,10 @@ LOG_FILE = LOG_DIR / f"fastapi_{datetime.now().strftime('%Y-%m-%d')}.log"
 # 配置日志
 logger.configure(**get_logging_config())
 
-# 导出logger实例
-get_logger = logger.bind 
+def get_logger(name: str):
+    """
+    获取logger实例
+    :param name: logger名称
+    :return: logger实例
+    """
+    return logger.bind(name=name) 

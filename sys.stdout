@@ -32,3 +32,1509 @@
 2025-05-04 20:32:57.194 | INFO     | 请求处理完成: GET /docs - 耗时: 1.01ms - 状态码: 200
 2025-05-04 20:32:57.385 | INFO     | 开始处理请求: GET /api/v1/openapi.json
 2025-05-04 20:32:57.386 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 2.0ms - 状态码: 200
+2025-05-05 14:06:50.299 | INFO     | 开始处理请求: GET /
+2025-05-05 14:06:50.304 | INFO     | 请求处理完成: GET / - 耗时: 5.55ms - 状态码: 200
+2025-05-05 14:06:51.006 | INFO     | 开始处理请求: GET /favicon.ico
+2025-05-05 14:06:51.006 | INFO     | 请求处理完成: GET /favicon.ico - 耗时: 0.0ms - 状态码: 404
+2025-05-05 14:07:05.312 | INFO     | 开始处理请求: GET /docs
+2025-05-05 14:07:05.312 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 14:07:05.399 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 14:07:05.412 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 12.35ms - 状态码: 200
+2025-05-05 14:17:53.338 | INFO     | 开始处理请求: GET /docs
+2025-05-05 14:17:53.340 | INFO     | 请求处理完成: GET /docs - 耗时: 2.01ms - 状态码: 200
+2025-05-05 14:18:14.801 | INFO     | 开始处理请求: GET /
+2025-05-05 14:18:14.804 | INFO     | 请求处理完成: GET / - 耗时: 2.97ms - 状态码: 200
+2025-05-05 14:18:26.794 | INFO     | 开始处理请求: GET /docs
+2025-05-05 14:18:26.794 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 14:18:26.886 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 14:18:26.907 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 20.1ms - 状态码: 200
+2025-05-05 14:20:49.583 | INFO     | 开始处理请求: GET /docs
+2025-05-05 14:20:49.583 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 14:20:49.733 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 14:20:49.741 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 7.79ms - 状态码: 200
+2025-05-05 15:41:07.412 | INFO     | 开始处理请求: GET /docs
+2025-05-05 15:41:07.413 | INFO     | 请求处理完成: GET /docs - 耗时: 1.0ms - 状态码: 200
+2025-05-05 15:41:07.542 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 15:41:07.556 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 14.04ms - 状态码: 200
+2025-05-05 15:41:39.196 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 15:41:39.201 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 4.62ms - 状态码: 401
+2025-05-05 15:42:13.356 | INFO     | 开始处理请求: GET /docs
+2025-05-05 15:42:13.356 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 15:42:13.451 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 15:42:13.464 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 13.47ms - 状态码: 200
+2025-05-05 15:42:24.766 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 15:42:24.784 | ERROR    | 创建部门失败: When initializing mapper Mapper[User(hUsers)], expression 'EmailConfig' failed to locate a name ('EmailConfig'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+2025-05-05 15:42:24.784 | ERROR    | 创建部门失败: When initializing mapper Mapper[User(hUsers)], expression 'EmailConfig' failed to locate a name ('EmailConfig'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+2025-05-05 15:42:24.784 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 17.52ms - 状态码: 500
+2025-05-05 15:48:11.214 | INFO     | 开始处理请求: GET /docs
+2025-05-05 15:48:11.214 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 15:48:11.329 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 15:48:11.341 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 12.1ms - 状态码: 200
+2025-05-05 15:48:20.794 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 15:48:20.821 | ERROR    | 创建部门失败: '_GeneratorContextManager' object has no attribute 'add'
+2025-05-05 15:48:20.821 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 27.11ms - 状态码: 500
+2025-05-05 16:12:11.240 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:12:11.240 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:12:11.345 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:12:11.361 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 15.66ms - 状态码: 200
+2025-05-05 16:12:19.340 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:12:19.368 | ERROR    | 创建部门失败: '_GeneratorContextManager' object has no attribute 'add'
+2025-05-05 16:12:19.368 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 28.12ms - 状态码: 500
+2025-05-05 16:23:19.797 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:23:19.797 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:23:19.901 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:23:19.916 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 14.07ms - 状态码: 200
+2025-05-05 16:23:26.864 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:23:26.888 | ERROR    | 创建部门失败: '_GeneratorContextManager' object has no attribute 'add'
+2025-05-05 16:23:26.888 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 25.0ms - 状态码: 500
+2025-05-05 16:25:24.544 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:25:24.544 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:25:24.638 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:25:24.653 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 15.83ms - 状态码: 200
+2025-05-05 16:25:34.190 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:25:34.202 | ERROR    | 创建部门失败: '_GeneratorContextManager' object has no attribute 'add'
+2025-05-05 16:25:34.202 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 12.11ms - 状态码: 500
+2025-05-05 16:33:25.017 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:33:25.028 | INFO     | 请求处理完成: GET /docs - 耗时: 10.92ms - 状态码: 200
+2025-05-05 16:33:25.136 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:33:25.151 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 14.75ms - 状态码: 200
+2025-05-05 16:33:38.788 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:33:39.097 | INFO     | 部门创建成功: 生产部
+2025-05-05 16:40:53.576 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:40:53.578 | INFO     | 请求处理完成: GET /docs - 耗时: 1.44ms - 状态码: 200
+2025-05-05 16:40:53.901 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:40:53.916 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 15.54ms - 状态码: 200
+2025-05-05 16:42:08.183 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:42:08.185 | INFO     | 请求处理完成: GET /docs - 耗时: 2.01ms - 状态码: 200
+2025-05-05 16:42:08.274 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:42:08.292 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 17.52ms - 状态码: 200
+2025-05-05 16:42:17.264 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:42:17.533 | INFO     | 部门创建成功: 生产部
+2025-05-05 16:42:17.535 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 270.9ms - 状态码: 200
+2025-05-05 16:45:18.772 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:45:18.772 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:45:18.862 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:45:18.877 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 15.41ms - 状态码: 200
+2025-05-05 16:45:26.381 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:45:26.556 | INFO     | 部门创建成功: 生产部
+2025-05-05 16:45:26.556 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 175.41ms - 状态码: 200
+2025-05-05 16:45:34.359 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:45:34.375 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 15.78ms - 状态码: 400
+2025-05-05 16:46:00.472 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:46:00.474 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:46:00.567 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:46:00.568 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 1.01ms - 状态码: 200
+2025-05-05 16:47:28.583 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:47:28.611 | INFO     | 部门创建成功: 销售部
+2025-05-05 16:47:28.613 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 29.63ms - 状态码: 200
+2025-05-05 16:48:44.089 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:48:44.106 | INFO     | 部门创建成功: 业务部
+2025-05-05 16:48:44.108 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 18.71ms - 状态码: 200
+2025-05-05 16:48:54.913 | INFO     | 开始处理请求: POST /api/v1/departments/add
+2025-05-05 16:48:54.928 | INFO     | 部门创建成功: 市场部
+2025-05-05 16:48:54.928 | INFO     | 请求处理完成: POST /api/v1/departments/add - 耗时: 14.82ms - 状态码: 200
+2025-05-05 16:49:21.757 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:49:21.757 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:49:21.838 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:49:21.846 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 7.65ms - 状态码: 200
+2025-05-05 16:49:31.801 | INFO     | 开始处理请求: GET /api/v1/departments/tree
+2025-05-05 16:49:32.017 | INFO     | 请求处理完成: GET /api/v1/departments/tree - 耗时: 216.55ms - 状态码: 200
+2025-05-05 16:53:04.623 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:53:04.623 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:53:06.021 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:53:06.026 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 4.59ms - 状态码: 200
+2025-05-05 16:53:46.326 | INFO     | 开始处理请求: PUT /api/v1/departments/C6B35911-298D-11F0-A3E9-0C9A3CFE6F18/status
+2025-05-05 16:53:46.578 | INFO     | 部门状态更新成功: c6b35911-298d-11f0-a3e9-0c9a3cfe6f18 -> 0
+2025-05-05 16:53:46.578 | INFO     | 请求处理完成: PUT /api/v1/departments/C6B35911-298D-11F0-A3E9-0C9A3CFE6F18/status - 耗时: 251.25ms - 状态码: 200
+2025-05-05 16:54:36.833 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:54:36.833 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:54:38.156 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:54:38.167 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 10.8ms - 状态码: 200
+2025-05-05 16:55:43.863 | INFO     | 开始处理请求: GET /departments/delete/C6B35911-298D-11F0-A3E9-0C9A3CFE6F18
+2025-05-05 16:55:43.863 | INFO     | 请求处理完成: GET /departments/delete/C6B35911-298D-11F0-A3E9-0C9A3CFE6F18 - 耗时: 0.0ms - 状态码: 404
+2025-05-05 16:56:11.389 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:56:11.390 | INFO     | 请求处理完成: GET /docs - 耗时: 1.0ms - 状态码: 200
+2025-05-05 16:56:11.462 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:56:11.464 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 1.0ms - 状态码: 200
+2025-05-05 16:56:58.910 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:56:58.910 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:57:00.295 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:57:00.306 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 10.99ms - 状态码: 200
+2025-05-05 16:57:49.830 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:57:49.830 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:57:49.924 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:57:49.925 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 1.33ms - 状态码: 200
+2025-05-05 16:58:01.941 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:58:01.943 | INFO     | 请求处理完成: GET /docs - 耗时: 2.33ms - 状态码: 200
+2025-05-05 16:58:02.054 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:58:02.073 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 19.1ms - 状态码: 200
+2025-05-05 16:59:18.991 | INFO     | 开始处理请求: GET /docs
+2025-05-05 16:59:18.991 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 16:59:19.083 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 16:59:19.098 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 15.18ms - 状态码: 200
+2025-05-05 17:00:18.010 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 17:00:18.028 | ERROR    | 数据验证错误
+2025-05-05 17:00:18.028 | INFO     | 请求处理完成: POST /api/v1/auth/register - 耗时: 18.03ms - 状态码: 422
+2025-05-05 17:02:28.681 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 17:02:28.683 | ERROR    | 用户注册失败: '_GeneratorContextManager' object has no attribute 'query'
+2025-05-05 17:02:28.683 | ERROR    | 请求处理失败: POST /api/v1/auth/register - 耗时: 3.82ms - 错误: '_GeneratorContextManager' object has no attribute 'query'
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 111, in receive
+    return self.receive_nowait()
+           │    └ <function MemoryObjectReceiveStream.receive_nowait at 0x00000165DDA94670>
+           └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 106, in receive_nowait
+    raise WouldBlock
+          └ <class 'anyio.WouldBlock'>
+
+anyio.WouldBlock
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 124, in receive
+    return receiver.item
+           └ MemoryObjectItemReceiver(task_info=AsyncIOTaskInfo(id=1537065405952, name='Task-15'), item=None)
+
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 157, in call_next
+    message = await recv_stream.receive()
+                    │           └ <function MemoryObjectReceiveStream.receive at 0x00000165DDA94700>
+                    └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream
+          └ <class 'anyio.EndOfStream'>
+
+anyio.EndOfStream
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 364
+               │     └ 3
+               └ <function _main at 0x00000165DA9FC1F0>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 364
+           │    └ <function BaseProcess._bootstrap at 0x00000165DA8AD670>
+           └ <SpawnProcess name='SpawnProcess-16' parent=20628 started>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x00000165DA8E61F0>
+    └ <SpawnProcess name='SpawnProcess-16' parent=20628 started>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000165DA6BAFA0>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-16' parent=20628 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-16' parent=20628 started>
+    │    └ <function subprocess_started at 0x00000165DC98E700>
+    └ <SpawnProcess name='SpawnProcess-16' parent=20628 started>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x00000165DA6BAFD0>>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x00000165DC98B820>
+           │       │   └ <uvicorn.server.Server object at 0x00000165DA6BAFD0>
+           │       └ <function run at 0x00000165DAA1D3A0>
+           └ <module 'asyncio' from 'D:\\Program Files\\Python38\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Program Files\Python38\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x00000165DCDDB0C0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x00000165DC5B8940>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 603, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x00000165DC5B88B0>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x00000165DC5BC430>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000165DC5171F0>
+    └ <Handle <TaskWakeupMethWrapper object at 0x00000165E05FEC40>(<Future finished result=True>)>
+
+  File "D:\Program Files\Python38\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x00000165E05FEC40>(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x00000165E05FEC40>(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x00000165E05FEC40>(<Future finished result=True>)>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000165DCDC74C0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000165E05FE280>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000165E05FE...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x00000165E02FEBE0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000165DCDC74C0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000165E05FE280>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000165E05FE...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000165E05FE280>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000165E05FE...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000165E03AECD0>
+          └ <fastapi.applications.FastAPI object at 0x00000165E02FEBE0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000165E0410820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000165E05FE...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <app.middlewares.logging.LoggingMiddleware object at 0x00000165E03AEC70>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000165E03AECD0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x00000165E0410670>
+                     │    │             └ <starlette.middleware.base._CachedRequest object at 0x00000165E0446550>
+                     │    └ <bound method LoggingMiddleware.dispatch of <app.middlewares.logging.LoggingMiddleware object at 0x00000165E03AEC70>>
+                     └ <app.middlewares.logging.LoggingMiddleware object at 0x00000165E03AEC70>
+
+> File "D:\PycharmProjects\FastApi\app\middlewares\logging.py", line 44, in dispatch
+    response = await call_next(request)
+                     │         └ <starlette.middleware.base._CachedRequest object at 0x00000165E0446550>
+                     └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x00000165E0410670>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+          └ AttributeError("'_GeneratorContextManager' object has no attribute 'query'")
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+          │    │   │      │                      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x00000165E05F4D30>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x00000165E03AEC40>
+          └ <app.middlewares.logging.LoggingMiddleware object at 0x00000165E03AEC70>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+          │    │               │      │        │                     └ Headers({'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'content-length': '0', 'sec-ch-ua-platform': '"Windows"', 'use...
+          │    │               │      │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x00000165E05F4D30>
+          │    │               │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │    │               └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function CORSMiddleware.simple_response at 0x00000165DE01EF70>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x00000165E03AEC40>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+          │    │   │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x00000165E03AEC40...
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000165E03AEBE0>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x00000165E03AEC40>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x00000165E03AEC40...
+          │                            │    │    │     │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x00000165E05FE520>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x00000165E0351E50>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000165E03AEBE0>
+          └ <function wrap_app_handling_exceptions at 0x00000165DDF68310>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000165E05F4F70>
+          │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <fastapi.routing.APIRouter object at 0x00000165E0351E50>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000165E05F4F70>
+          │    │                │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x00000165E0351E50>>
+          └ <fastapi.routing.APIRouter object at 0x00000165E0351E50>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000165E05F4F70>
+          │     │      │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x00000165DDF82940>
+          └ APIRoute(path='/api/v1/auth/register', name='register', methods=['POST'])
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000165E05F4F70>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x00000165E031E790>
+          └ APIRoute(path='/api/v1/auth/register', name='register', methods=['POST'])
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000165E05F4F70>
+          │                            │    │        │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x00000165E05FE6D0>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x00000165E0600040>
+          └ <function wrap_app_handling_exceptions at 0x00000165DDF68310>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000165E06000D0>
+          │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000165E0410550>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x00000165E0600040>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+                     │ └ <starlette.requests.Request object at 0x00000165E05FE6D0>
+                     └ <function get_request_handler.<locals>.app at 0x00000165E031EA60>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x00000165DDF89550>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'db': <contextlib._GeneratorContextManager object at 0x00000165E040D7F0>, 'user_in': UserRegister(UserName='FeyFey', Email='...
+                 │         └ <function register at 0x00000165DFF7F9D0>
+                 └ Dependant(path_params=[], query_params=[], header_params=[], cookie_params=[], body_params=[], dependencies=[Dependant(path_p...
+
+  File "D:\PycharmProjects\FastApi\app\api\v1\endpoints\auth.py", line 22, in register
+    user = await crud_user.get_by_email(db, email=user_in.Email)
+                 │         │            │         │       └ 'wxb1@h-sun.com'
+                 │         │            │         └ UserRegister(UserName='FeyFey', Email='wxb1@h-sun.com', Password='0522@XXF', ConfirmPassword='0522@XXF', DepartmentId=UUID('4...
+                 │         │            └ <contextlib._GeneratorContextManager object at 0x00000165E040D7F0>
+                 │         └ <function CRUDUser.get_by_email at 0x00000165E02F5670>
+                 └ <app.crud.user.CRUDUser object at 0x00000165E02DC220>
+
+  File "D:\PycharmProjects\FastApi\app\crud\user.py", line 38, in get_by_email
+    return db.query(User).filter(User.Email == email).first()
+           │        │            │    │        └ 'wxb1@h-sun.com'
+           │        │            │    └ <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x00000165DFFE94A0>
+           │        │            └ <class 'app.models.user.User'>
+           │        └ <class 'app.models.user.User'>
+           └ <contextlib._GeneratorContextManager object at 0x00000165E040D7F0>
+
+AttributeError: '_GeneratorContextManager' object has no attribute 'query'
+2025-05-05 17:14:20.701 | INFO     | 开始处理请求: GET /docs
+2025-05-05 17:14:20.703 | INFO     | 请求处理完成: GET /docs - 耗时: 2.04ms - 状态码: 200
+2025-05-05 17:14:20.837 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 17:14:20.854 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 16.63ms - 状态码: 200
+2025-05-05 17:14:51.570 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 17:14:51.764 | ERROR    | 用户注册失败: HOST
+2025-05-05 17:14:51.765 | ERROR    | 请求处理失败: POST /api/v1/auth/register - 耗时: 195.07ms - 错误: HOST
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 111, in receive
+    return self.receive_nowait()
+           │    └ <function MemoryObjectReceiveStream.receive_nowait at 0x0000027710254670>
+           └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 106, in receive_nowait
+    raise WouldBlock
+          └ <class 'anyio.WouldBlock'>
+
+anyio.WouldBlock
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 124, in receive
+    return receiver.item
+           └ MemoryObjectItemReceiver(task_info=AsyncIOTaskInfo(id=2710437755936, name='Task-11'), item=None)
+
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 157, in call_next
+    message = await recv_stream.receive()
+                    │           └ <function MemoryObjectReceiveStream.receive at 0x0000027710254700>
+                    └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream
+          └ <class 'anyio.EndOfStream'>
+
+anyio.EndOfStream
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 352
+               │     └ 3
+               └ <function _main at 0x000002770D1BC1F0>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 352
+           │    └ <function BaseProcess._bootstrap at 0x000002770D04D670>
+           └ <SpawnProcess name='SpawnProcess-1' parent=22012 started>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x000002770D0861F0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=22012 started>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x000002770CE5AFA0>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=22012 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=22012 started>
+    │    └ <function subprocess_started at 0x000002770F14E700>
+    └ <SpawnProcess name='SpawnProcess-1' parent=22012 started>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x000002770CE5AFD0>>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x000002770F14B820>
+           │       │   └ <uvicorn.server.Server object at 0x000002770CE5AFD0>
+           │       └ <function run at 0x000002770D1DD3A0>
+           └ <module 'asyncio' from 'D:\\Program Files\\Python38\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Program Files\Python38\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x000002770F59B0C0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x000002770ED78940>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 603, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x000002770ED788B0>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002770ED7C430>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002770ECD71F0>
+    └ <Handle <TaskWakeupMethWrapper object at 0x0000027712C1A8B0>(<Future finished result=True>)>
+
+  File "D:\Program Files\Python38\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x0000027712C1A8B0>(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x0000027712C1A8B0>(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x0000027712C1A8B0>(<Future finished result=True>)>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x000002770F5874C0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x0000027712BE37C0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x0000027712BE3...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x000002770F6339D0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x000002770F5874C0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x0000027712BE37C0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x0000027712BE3...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x0000027712BE37C0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x0000027712BE3...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000027712B74370>
+          └ <fastapi.applications.FastAPI object at 0x000002770F6339D0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000027712B5E1F0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x0000027712BE3...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <app.middlewares.logging.LoggingMiddleware object at 0x0000027712B743A0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000027712B74370>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x0000027712B5E430>
+                     │    │             └ <starlette.middleware.base._CachedRequest object at 0x0000027712BD2880>
+                     │    └ <bound method LoggingMiddleware.dispatch of <app.middlewares.logging.LoggingMiddleware object at 0x0000027712B743A0>>
+                     └ <app.middlewares.logging.LoggingMiddleware object at 0x0000027712B743A0>
+
+> File "D:\PycharmProjects\FastApi\app\middlewares\logging.py", line 44, in dispatch
+    response = await call_next(request)
+                     │         └ <starlette.middleware.base._CachedRequest object at 0x0000027712BD2880>
+                     └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x0000027712B5E430>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+          └ AttributeError('HOST')
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+          │    │   │      │                      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x0000027712BD6790>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x0000027712B745E0>
+          └ <app.middlewares.logging.LoggingMiddleware object at 0x0000027712B743A0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+          │    │               │      │        │                     └ Headers({'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'content-length': '0', 'sec-ch-ua-platform': '"Windows"', 'use...
+          │    │               │      │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x0000027712BD6790>
+          │    │               │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │    │               └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function CORSMiddleware.simple_response at 0x00000277107DFF70>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000027712B745E0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+          │    │   │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x0000027712B745E0...
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000027712B74760>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000027712B745E0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x0000027712B745E0...
+          │                            │    │    │     │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x0000027712BE3A60>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x0000027712B2CE80>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000027712B74760>
+          └ <function wrap_app_handling_exceptions at 0x0000027710728310>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000027712BD6820>
+          │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <fastapi.routing.APIRouter object at 0x0000027712B2CE80>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000027712BD6820>
+          │    │                │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x0000027712B2CE80>>
+          └ <fastapi.routing.APIRouter object at 0x0000027712B2CE80>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000027712BD6820>
+          │     │      │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x0000027710742940>
+          └ APIRoute(path='/api/v1/auth/register', name='register', methods=['POST'])
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000027712BD6820>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x0000027712ACA430>
+          └ APIRoute(path='/api/v1/auth/register', name='register', methods=['POST'])
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000027712BD6820>
+          │                            │    │        │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x0000027712BE3C70>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x0000027712BD6940>
+          └ <function wrap_app_handling_exceptions at 0x0000027710728310>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000027712BD6550>
+          │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000027712B5E820>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x0000027712BD6940>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+                     │ └ <starlette.requests.Request object at 0x0000027712BE3C70>
+                     └ <function get_request_handler.<locals>.app at 0x000002770F637F70>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x0000027710749550>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'db': <sqlalchemy.orm.session.Session object at 0x0000027712C1A940>, 'user_in': UserRegister(UserName='FeyFey', Email='wxb1@...
+                 │         └ <function register at 0x0000027712745A60>
+                 └ Dependant(path_params=[], query_params=[], header_params=[], cookie_params=[], body_params=[], dependencies=[Dependant(path_p...
+
+  File "D:\PycharmProjects\FastApi\app\api\v1\endpoints\auth.py", line 31, in register
+    user = await crud_user.create(db, obj_in=user_in)
+                 │         │      │          └ UserRegister(UserName='FeyFey', Email='wxb1@h-sun.com', Password='0522@XXF', ConfirmPassword='0522@XXF', DepartmentId=UUID('4...
+                 │         │      └ <sqlalchemy.orm.session.Session object at 0x0000027712C1A940>
+                 │         └ <function CRUDUser.create at 0x0000027712ABA790>
+                 └ <app.crud.user.CRUDUser object at 0x0000027712AA1370>
+
+  File "D:\PycharmProjects\FastApi\app\crud\user.py", line 59, in create
+    AvatarUrl=Settings.HOST + '/static/uploads/avatars/default.png',
+              └ <class 'app.core.config.Settings'>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\pydantic\_internal\_model_construction.py", line 264, in __getattr__
+    raise AttributeError(item)
+                         └ 'HOST'
+
+AttributeError: HOST
+2025-05-05 17:16:34.980 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 17:16:35.145 | ERROR    | 用户注册失败: bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')
+2025-05-05 17:16:35.145 | ERROR    | 请求处理失败: POST /api/v1/auth/register - 耗时: 164.95ms - 错误: bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 111, in receive
+    return self.receive_nowait()
+           │    └ <function MemoryObjectReceiveStream.receive_nowait at 0x00000259EA3D4670>
+           └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 106, in receive_nowait
+    raise WouldBlock
+          └ <class 'anyio.WouldBlock'>
+
+anyio.WouldBlock
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 124, in receive
+    return receiver.item
+           └ MemoryObjectItemReceiver(task_info=AsyncIOTaskInfo(id=2585247619968, name='Task-4'), item=None)
+
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 157, in call_next
+    message = await recv_stream.receive()
+                    │           └ <function MemoryObjectReceiveStream.receive at 0x00000259EA3D4700>
+                    └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream
+          └ <class 'anyio.EndOfStream'>
+
+anyio.EndOfStream
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 360
+               │     └ 3
+               └ <function _main at 0x00000259E733C1F0>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 360
+           │    └ <function BaseProcess._bootstrap at 0x00000259E71ED670>
+           └ <SpawnProcess name='SpawnProcess-2' parent=22012 started>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x00000259E72261F0>
+    └ <SpawnProcess name='SpawnProcess-2' parent=22012 started>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000259E6FFAFA0>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-2' parent=22012 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-2' parent=22012 started>
+    │    └ <function subprocess_started at 0x00000259E96CE700>
+    └ <SpawnProcess name='SpawnProcess-2' parent=22012 started>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x00000259E6FFAFD0>>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x00000259E96CB820>
+           │       │   └ <uvicorn.server.Server object at 0x00000259E6FFAFD0>
+           │       └ <function run at 0x00000259E735D3A0>
+           └ <module 'asyncio' from 'D:\\Program Files\\Python38\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Program Files\Python38\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x00000259E971B0C0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x00000259E8EF8940>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 603, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x00000259E8EF88B0>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x00000259E8EFC430>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000259E8E771F0>
+    └ <Handle <TaskWakeupMethWrapper object at 0x00000259ECD66D30>(<Future finished result=True>)>
+
+  File "D:\Program Files\Python38\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x00000259ECD66D30>(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x00000259ECD66D30>(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x00000259ECD66D30>(<Future finished result=True>)>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000259E97074C0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000259ECD0B130>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000259ECD0B...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x00000259E97B39D0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000259E97074C0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000259ECD0B130>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000259ECD0B...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000259ECD0B130>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000259ECD0B...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000259ECCF3370>
+          └ <fastapi.applications.FastAPI object at 0x00000259E97B39D0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000259ECC4E160>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x00000259ECD0B...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <app.middlewares.logging.LoggingMiddleware object at 0x00000259ECCF33A0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000259ECCF3370>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x00000259ECC4E790>
+                     │    │             └ <starlette.middleware.base._CachedRequest object at 0x00000259ECCF6760>
+                     │    └ <bound method LoggingMiddleware.dispatch of <app.middlewares.logging.LoggingMiddleware object at 0x00000259ECCF33A0>>
+                     └ <app.middlewares.logging.LoggingMiddleware object at 0x00000259ECCF33A0>
+
+> File "D:\PycharmProjects\FastApi\app\middlewares\logging.py", line 44, in dispatch
+    response = await call_next(request)
+                     │         └ <starlette.middleware.base._CachedRequest object at 0x00000259ECCF6760>
+                     └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x00000259ECC4E790>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+          └ MissingBackendError("bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')")
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+          │    │   │      │                      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x00000259ECC3BAF0>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x00000259ECCF35E0>
+          └ <app.middlewares.logging.LoggingMiddleware object at 0x00000259ECCF33A0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+          │    │               │      │        │                     └ Headers({'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'content-length': '0', 'sec-ch-ua-platform': '"Windows"', 'use...
+          │    │               │      │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x00000259ECC3BAF0>
+          │    │               │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │    │               └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function CORSMiddleware.simple_response at 0x00000259EA95FF70>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x00000259ECCF35E0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+          │    │   │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x00000259ECCF35E0...
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000259ECCF3760>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x00000259ECCF35E0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x00000259ECCF35E0...
+          │                            │    │    │     │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x00000259ECD53820>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x00000259ECCACF10>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000259ECCF3760>
+          └ <function wrap_app_handling_exceptions at 0x00000259EA8A8310>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000259ECD55670>
+          │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <fastapi.routing.APIRouter object at 0x00000259ECCACF10>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000259ECD55670>
+          │    │                │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x00000259ECCACF10>>
+          └ <fastapi.routing.APIRouter object at 0x00000259ECCACF10>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000259ECD55670>
+          │     │      │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x00000259EA8C2940>
+          └ APIRoute(path='/api/v1/auth/register', name='register', methods=['POST'])
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000259ECD55670>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x00000259ECC4E0D0>
+          └ APIRoute(path='/api/v1/auth/register', name='register', methods=['POST'])
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000259ECD55670>
+          │                            │    │        │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x00000259ECD539D0>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x00000259ECD55700>
+          └ <function wrap_app_handling_exceptions at 0x00000259EA8A8310>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000259ECD55790>
+          │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x00000259ECC700D0>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x00000259ECD55700>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+                     │ └ <starlette.requests.Request object at 0x00000259ECD539D0>
+                     └ <function get_request_handler.<locals>.app at 0x00000259ECC4E280>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x00000259EA8C9550>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'db': <sqlalchemy.orm.session.Session object at 0x00000259ECD6E190>, 'user_in': UserRegister(UserName='FeyFey', Email='wxb1@...
+                 │         └ <function register at 0x00000259EC8BFA60>
+                 └ Dependant(path_params=[], query_params=[], header_params=[], cookie_params=[], body_params=[], dependencies=[Dependant(path_p...
+
+  File "D:\PycharmProjects\FastApi\app\api\v1\endpoints\auth.py", line 31, in register
+    user = await crud_user.create(db, obj_in=user_in)
+                 │         │      │          └ UserRegister(UserName='FeyFey', Email='wxb1@h-sun.com', Password='0522@XXF', ConfirmPassword='0522@XXF', DepartmentId=UUID('4...
+                 │         │      └ <sqlalchemy.orm.session.Session object at 0x00000259ECD6E190>
+                 │         └ <function CRUDUser.create at 0x00000259ECC3B820>
+                 └ <app.crud.user.CRUDUser object at 0x00000259ECC1F4C0>
+
+  File "D:\PycharmProjects\FastApi\app\crud\user.py", line 55, in create
+    PasswordHash=await get_password_hash(obj_in.Password),
+                       │                 │      └ '0522@XXF'
+                       │                 └ UserRegister(UserName='FeyFey', Email='wxb1@h-sun.com', Password='0522@XXF', ConfirmPassword='0522@XXF', DepartmentId=UUID('4...
+                       └ <function get_password_hash at 0x00000259ECC29160>
+
+  File "D:\PycharmProjects\FastApi\app\core\security.py", line 18, in get_password_hash
+    return pwd_context.hash(password)
+           │           │    └ '0522@XXF'
+           │           └ <function CryptContext.hash at 0x00000259EC9E4040>
+           └ <CryptContext at 0x259ec93a280>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\passlib\context.py", line 2258, in hash
+    return record.hash(secret, **kwds)
+           │      │    │         └ {}
+           │      │    └ '0522@XXF'
+           │      └ <classmethod object at 0x00000259EC9D65B0>
+           └ <class 'passlib.handlers.bcrypt.<customized bcrypt hasher>'>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\passlib\utils\handlers.py", line 779, in hash
+    self.checksum = self._calc_checksum(secret)
+    │    │          │    │              └ '0522@XXF'
+    │    │          │    └ <function _NoBackend._calc_checksum at 0x00000259ECC37310>
+    │    │          └ <passlib.handlers.bcrypt.<customized bcrypt hasher> object at 0x00000259ECD66A30>
+    │    └ None
+    └ <passlib.handlers.bcrypt.<customized bcrypt hasher> object at 0x00000259ECD66A30>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\passlib\handlers\bcrypt.py", line 591, in _calc_checksum
+    self._stub_requires_backend()
+    │    └ <classmethod object at 0x00000259EC9DD8B0>
+    └ <passlib.handlers.bcrypt.<customized bcrypt hasher> object at 0x00000259ECD66A30>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\passlib\utils\handlers.py", line 2254, in _stub_requires_backend
+    cls.set_backend()
+    │   └ <classmethod object at 0x00000259EC9DD7F0>
+    └ <class 'passlib.handlers.bcrypt.<customized bcrypt hasher>'>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\passlib\utils\handlers.py", line 2156, in set_backend
+    return owner.set_backend(name, dryrun=dryrun)
+           │     │           │            └ False
+           │     │           └ 'any'
+           │     └ <classmethod object at 0x00000259EC9DD7F0>
+           └ <class 'passlib.handlers.bcrypt.bcrypt'>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\passlib\utils\handlers.py", line 2176, in set_backend
+    raise default_error
+          └ MissingBackendError("bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')")
+
+passlib.exc.MissingBackendError: bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')
+2025-05-05 17:17:34.229 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 17:17:34.674 | ERROR    | 用户注册失败: HOST
+2025-05-05 17:17:34.679 | ERROR    | 请求处理失败: POST /api/v1/auth/register - 耗时: 450.16ms - 错误: HOST
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 111, in receive
+    return self.receive_nowait()
+           │    └ <function MemoryObjectReceiveStream.receive_nowait at 0x000001AF2A754670>
+           └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 106, in receive_nowait
+    raise WouldBlock
+          └ <class 'anyio.WouldBlock'>
+
+anyio.WouldBlock
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 124, in receive
+    return receiver.item
+           └ MemoryObjectItemReceiver(task_info=AsyncIOTaskInfo(id=1851885849632, name='Task-4'), item=None)
+
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 157, in call_next
+    message = await recv_stream.receive()
+                    │           └ <function MemoryObjectReceiveStream.receive at 0x000001AF2A754700>
+                    └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream
+          └ <class 'anyio.EndOfStream'>
+
+anyio.EndOfStream
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 360
+               │     └ 3
+               └ <function _main at 0x000001AF276BC1F0>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 360
+           │    └ <function BaseProcess._bootstrap at 0x000001AF2754D670>
+           └ <SpawnProcess name='SpawnProcess-1' parent=9924 started>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x000001AF275861F0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=9924 started>
+
+  File "D:\Program Files\Python38\lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x000001AF2735AFA0>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=9924 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=9924 started>
+    │    └ <function subprocess_started at 0x000001AF29A4E700>
+    └ <SpawnProcess name='SpawnProcess-1' parent=9924 started>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x000001AF2735AFD0>>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x000001AF29A4C820>
+           │       │   └ <uvicorn.server.Server object at 0x000001AF2735AFD0>
+           │       └ <function run at 0x000001AF276DD3A0>
+           └ <module 'asyncio' from 'D:\\Program Files\\Python38\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Program Files\Python38\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x000001AF29A9B0C0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x000001AF29278940>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 603, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x000001AF292788B0>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001AF2927C430>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Program Files\Python38\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001AF291F71F0>
+    └ <Handle <TaskWakeupMethWrapper object at 0x000001AF2D0E9E20>(<Future finished result=True>)>
+
+  File "D:\Program Files\Python38\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x000001AF2D0E9E20>(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x000001AF2D0E9E20>(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x000001AF2D0E9E20>(<Future finished result=True>)>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x000001AF29A884C0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000001AF2D08A760>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000001AF2D08A...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x000001AF29B339D0>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x000001AF29A884C0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000001AF2D08A760>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000001AF2D08A...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000001AF2D08A760>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000001AF2D08A...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000001AF2D065DF0>
+          └ <fastapi.applications.FastAPI object at 0x000001AF29B339D0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x000001AF2CFF0670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000001AF2D08A...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <app.middlewares.logging.LoggingMiddleware object at 0x000001AF2D065A90>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000001AF2D065DF0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x000001AF2CFF0430>
+                     │    │             └ <starlette.middleware.base._CachedRequest object at 0x000001AF2D078C70>
+                     │    └ <bound method LoggingMiddleware.dispatch of <app.middlewares.logging.LoggingMiddleware object at 0x000001AF2D065A90>>
+                     └ <app.middlewares.logging.LoggingMiddleware object at 0x000001AF2D065A90>
+
+> File "D:\PycharmProjects\FastApi\app\middlewares\logging.py", line 44, in dispatch
+    response = await call_next(request)
+                     │         └ <starlette.middleware.base._CachedRequest object at 0x000001AF2D078C70>
+                     └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x000001AF2CFF0430>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+          └ AttributeError('HOST')
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+          │    │   │      │                      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x000001AF2D039CA0>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x000001AF2D065A60>
+          └ <app.middlewares.logging.LoggingMiddleware object at 0x000001AF2D065A90>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+          │    │               │      │        │                     └ Headers({'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'content-length': '0', 'sec-ch-ua-platform': '"Windows"', 'use...
+          │    │               │      │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x000001AF2D039CA0>
+          │    │               │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │    │               └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function CORSMiddleware.simple_response at 0x000001AF2ACDFF70>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x000001AF2D065A60>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+          │    │   │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x000001AF2D065A60...
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000001AF2D065C70>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x000001AF2D065A60>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+          │                            │    │    │     │      │        └ functools.partial(<bound method CORSMiddleware.send of <starlette.middleware.cors.CORSMiddleware object at 0x000001AF2D065A60...
+          │                            │    │    │     │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    │    └ <starlette.requests.Request object at 0x000001AF2D0D8910>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x000001AF2D02CDC0>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000001AF2D065C70>
+          └ <function wrap_app_handling_exceptions at 0x000001AF2AC28310>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001AF2D0DA790>
+          │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <fastapi.routing.APIRouter object at 0x000001AF2D02CDC0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001AF2D0DA790>
+          │    │                │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x000001AF2D02CDC0>>
+          └ <fastapi.routing.APIRouter object at 0x000001AF2D02CDC0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001AF2D0DA790>
+          │     │      │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x000001AF2AC42940>
+          └ APIRoute(path='/api/v1/auth/register', name='register', methods=['POST'])
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001AF2D0DA790>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x000001AF2D039310>
+          └ APIRoute(path='/api/v1/auth/register', name='register', methods=['POST'])
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001AF2D0DA790>
+          │                            │    │        │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │                            │    └ <starlette.requests.Request object at 0x000001AF2D0D8AC0>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x000001AF2D0DA820>
+          └ <function wrap_app_handling_exceptions at 0x000001AF2AC28310>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001AF2D0DA8B0>
+          │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x000001AF2CFF0AF0>
+          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          └ <function request_response.<locals>.app.<locals>.app at 0x000001AF2D0DA820>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+                     │ └ <starlette.requests.Request object at 0x000001AF2D0D8AC0>
+                     └ <function get_request_handler.<locals>.app at 0x000001AF2D0393A0>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x000001AF2AC49550>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'db': <sqlalchemy.orm.session.Session object at 0x000001AF2D0F0280>, 'user_in': UserRegister(UserName='FeyFey', Email='wxb1@...
+                 │         └ <function register at 0x000001AF2CC48B80>
+                 └ Dependant(path_params=[], query_params=[], header_params=[], cookie_params=[], body_params=[], dependencies=[Dependant(path_p...
+
+  File "D:\PycharmProjects\FastApi\app\api\v1\endpoints\auth.py", line 31, in register
+    user = await crud_user.create(db, obj_in=user_in)
+                 │         │      │          └ UserRegister(UserName='FeyFey', Email='wxb1@h-sun.com', Password='0522@XXF', ConfirmPassword='0522@XXF', DepartmentId=UUID('4...
+                 │         │      └ <sqlalchemy.orm.session.Session object at 0x000001AF2D0F0280>
+                 │         └ <function CRUDUser.create at 0x000001AF2CFBB8B0>
+                 └ <app.crud.user.CRUDUser object at 0x000001AF2CF9F460>
+
+  File "D:\PycharmProjects\FastApi\app\crud\user.py", line 59, in create
+    AvatarUrl=Settings.HOST + '/static/uploads/avatars/default.png',
+              └ <class 'app.core.config.Settings'>
+
+  File "d:\pycharmprojects\fastapi\.venv\lib\site-packages\pydantic\_internal\_model_construction.py", line 264, in __getattr__
+    raise AttributeError(item)
+                         └ 'HOST'
+
+AttributeError: HOST
+2025-05-05 17:23:03.615 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 17:23:04.068 | INFO     | 用户创建成功: FeyFey
+2025-05-05 17:23:04.068 | INFO     | 用户注册成功: FeyFey
+2025-05-05 17:23:04.069 | INFO     | 请求处理完成: POST /api/v1/auth/register - 耗时: 453.81ms - 状态码: 200
+2025-05-05 17:23:42.284 | INFO     | 开始处理请求: GET /docs
+2025-05-05 17:23:42.284 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 17:23:42.393 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 17:23:42.420 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 26.78ms - 状态码: 200
+2025-05-05 17:24:02.305 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 17:24:04.350 | ERROR    | 存储token失败: Invalid input of type: 'coroutine'. Convert to a bytes, string, int or float first.
+2025-05-05 17:24:04.350 | ERROR    | 用户登录失败: Invalid input of type: 'coroutine'. Convert to a bytes, string, int or float first.
+2025-05-05 17:24:04.352 | ERROR    | 登录过程发生错误: Invalid input of type: 'coroutine'. Convert to a bytes, string, int or float first.
+2025-05-05 17:24:04.352 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 2047.2ms - 状态码: 500
+2025-05-05 17:26:19.366 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 17:26:21.792 | ERROR    | 存储token失败: Invalid input of type: 'coroutine'. Convert to a bytes, string, int or float first.
+2025-05-05 17:26:21.793 | ERROR    | 用户登录失败: Invalid input of type: 'coroutine'. Convert to a bytes, string, int or float first.
+2025-05-05 17:26:21.793 | ERROR    | 登录过程发生错误: Invalid input of type: 'coroutine'. Convert to a bytes, string, int or float first.
+2025-05-05 17:26:21.793 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 2426.7ms - 状态码: 500
+2025-05-05 17:27:24.250 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 17:27:24.715 | INFO     | 用户创建成功: AA
+2025-05-05 17:27:24.715 | INFO     | 用户注册成功: AA
+2025-05-05 17:27:24.715 | INFO     | 请求处理完成: POST /api/v1/auth/register - 耗时: 465.21ms - 状态码: 200
+2025-05-05 17:28:32.320 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 17:28:57.232 | ERROR    | 用户登录失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:28:57.232 | ERROR    | 登录过程发生错误: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:28:57.232 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 24912.38ms - 状态码: 500
+2025-05-05 17:29:04.960 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 17:29:09.449 | ERROR    | 用户登录失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:29:09.449 | ERROR    | 登录过程发生错误: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:29:09.449 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 4488.93ms - 状态码: 500
+2025-05-05 17:31:14.443 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 17:31:15.353 | INFO     | 用户创建成功: AA
+2025-05-05 17:31:15.353 | INFO     | 用户注册成功: AA
+2025-05-05 17:31:15.354 | INFO     | 请求处理完成: POST /api/v1/auth/register - 耗时: 911.0ms - 状态码: 200
+2025-05-05 17:31:19.663 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 17:31:24.107 | ERROR    | 用户登录失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:31:24.107 | ERROR    | 登录过程发生错误: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:31:24.107 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 4446.06ms - 状态码: 500
+2025-05-05 17:35:45.825 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 17:35:50.316 | ERROR    | 用户登录失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:35:50.316 | ERROR    | 登录过程发生错误: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:35:50.316 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 4491.6ms - 状态码: 500
+2025-05-05 17:36:48.636 | INFO     | 开始处理请求: GET /docs
+2025-05-05 17:36:48.636 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 17:36:48.751 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 17:36:48.766 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 14.32ms - 状态码: 200
+2025-05-05 17:37:08.266 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 17:37:12.664 | ERROR    | 用户登录失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:37:12.664 | ERROR    | 登录过程发生错误: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2025-05-05 17:37:12.668 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 4402.05ms - 状态码: 500
+2025-05-05 18:22:11.751 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 18:22:14.207 | ERROR    | 存储token失败: object bool can't be used in 'await' expression
+2025-05-05 18:22:14.207 | ERROR    | 用户登录失败: object bool can't be used in 'await' expression
+2025-05-05 18:22:14.207 | ERROR    | 登录过程发生错误: object bool can't be used in 'await' expression
+2025-05-05 18:22:14.207 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 2455.68ms - 状态码: 500
+2025-05-05 18:22:32.764 | INFO     | 开始处理请求: GET /docs
+2025-05-05 18:22:32.764 | INFO     | 请求处理完成: GET /docs - 耗时: 0.0ms - 状态码: 200
+2025-05-05 18:22:32.861 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-05 18:22:32.887 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 26.03ms - 状态码: 200
+2025-05-05 18:22:48.364 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 18:22:50.964 | ERROR    | 存储token失败: object bool can't be used in 'await' expression
+2025-05-05 18:22:50.964 | ERROR    | 用户登录失败: object bool can't be used in 'await' expression
+2025-05-05 18:22:50.964 | ERROR    | 登录过程发生错误: object bool can't be used in 'await' expression
+2025-05-05 18:22:50.964 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 2600.66ms - 状态码: 500
+2025-05-05 18:24:54.895 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 18:24:57.383 | INFO     | 用户 8be8329a-2992-11f0-8c71-0c9a3cfe6f18 的token已存储
+2025-05-05 18:24:57.399 | ERROR    | 用户登录失败: 6 validation errors for UserLoginResponse
+Id
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+UserName
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+Email
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+DepartmentName
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+Role
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+AvatarUrl
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-05-05 18:24:57.399 | ERROR    | 登录过程发生错误: 6 validation errors for UserLoginResponse
+Id
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+UserName
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+Email
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+DepartmentName
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+Role
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+AvatarUrl
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...VRlzE7JtcZqdjMhAl3xZfc'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-05-05 18:24:57.399 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 2503.86ms - 状态码: 500
+2025-05-05 18:26:50.536 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 18:26:53.010 | INFO     | 用户 8be8329a-2992-11f0-8c71-0c9a3cfe6f18 的token已存储
+2025-05-05 18:26:53.010 | ERROR    | 用户登录失败: 6 validation errors for UserLoginResponse
+Id
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+UserName
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+Email
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+DepartmentName
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+Role
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+AvatarUrl
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-05-05 18:26:53.010 | ERROR    | 登录过程发生错误: 6 validation errors for UserLoginResponse
+Id
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+UserName
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+Email
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+DepartmentName
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+Role
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+AvatarUrl
+  Field required [type=missing, input_value={'user_info': UserInfo(Id...pRNdcCXEUgWrM2ixv27RTw'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-05-05 18:26:53.010 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 2473.16ms - 状态码: 500
+2025-05-05 18:31:23.466 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-05 18:31:25.865 | INFO     | 用户 8be8329a-2992-11f0-8c71-0c9a3cfe6f18 的token已存储
+2025-05-05 18:31:25.865 | INFO     | 用户登录成功: FeyFey
+2025-05-05 18:31:26.114 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 2647.58ms - 状态码: 200
+2025-05-05 18:34:19.142 | INFO     | 开始处理请求: POST /api/v1/auth/register
+2025-05-05 18:34:19.403 | INFO     | 用户创建成功: cc
+2025-05-05 18:34:19.403 | INFO     | 用户注册成功: cc
+2025-05-05 18:34:19.405 | INFO     | 请求处理完成: POST /api/v1/auth/register - 耗时: 263.22ms - 状态码: 200

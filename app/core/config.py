@@ -3,6 +3,7 @@ from typing import Dict, Any, Optional, List
 from pydantic_settings import BaseSettings
 from pydantic import ConfigDict
 import secrets
+import os
 
 # 获取项目根目录
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -71,6 +72,14 @@ class Settings(BaseSettings):
     CORS_CREDENTIALS: bool = True
     CORS_METHODS: List[str] = ["*"]
     CORS_HEADERS: List[str] = ["*"]
+    
+    # 静态文件配置
+    STATIC_URL: str = "/static"
+    STATIC_ROOT: str = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "static")
+    UPLOAD_DIR: str = os.path.join(STATIC_ROOT, "uploads")
+    AVATAR_DIR: str = os.path.join(UPLOAD_DIR, "avatars")
+    MAX_UPLOAD_SIZE: int = 5 * 1024 * 1024  # 5MB
+    ALLOWED_IMAGE_TYPES: List[str] = ["image/jpeg", "image/png", "image/gif"]
     
     @property
     def DATABASE_URL(self) -> str:

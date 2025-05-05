@@ -10,6 +10,7 @@ class User(BaseModel):
     PasswordHash = Column(String(255), nullable=False, comment="密码哈希")
     Email = Column(String(255), nullable=False, comment="邮箱")
     DepartmentId = Column(ForeignKey("hDepartments.Id"), nullable=False, comment="部门ID")
+    Role = Column(String(50), nullable=False, comment="角色")
     AvatarUrl = Column(String(255), nullable=False, comment="头像url")
     Status = Column(String(50), nullable=False, comment="状态:0-禁用;1-启用")
 

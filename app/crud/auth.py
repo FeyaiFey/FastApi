@@ -1,11 +1,12 @@
 from typing import Optional
 from sqlalchemy.orm import Session
+from sqlalchemy.exc import SQLAlchemyError
 from app.models.user import User
 from app.core.security import verify_password
 from app.crud.user import user as crud_user
 from app.core.database import get_db
 from app.core.logger import get_logger
-from sqlalchemy.exc import SQLAlchemyError
+from app.exceptions.base import DatabaseError
 
 logger = get_logger("auth.crud")
 
@@ -28,8 +29,8 @@ class CRUDAuth:
                 return None
             return user
         except SQLAlchemyError as e:
-            logger.error(f"数据库查询错误: {str(e)}")
-            raise
+            logger.error(f"认证时数据库查询错误: {str(e)}")
+            raise DatabaseError("认证失败")
     
     async def is_active(self, user: User) -> bool:
         """

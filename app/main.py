@@ -5,7 +5,7 @@ from app.middlewares.logging import LoggingMiddleware
 from app.core.logger import get_logger
 from app.core.config import Settings, get_cors_config
 from app.exceptions import register_exception_handlers
-from app.api.v1.endpoints import auth, users, departments
+from app.api.v1.endpoints import auth, users, departments, roles, menus
 
 # 创建logger实例
 logger = get_logger(name="main")
@@ -53,6 +53,16 @@ def register_routers() -> None:
         departments.router,
         prefix=f"{settings.API_V1_STR}/departments",
         tags=["部门"]
+    )
+    app.include_router(
+        roles.router,
+        prefix=f"{settings.API_V1_STR}/roles",
+        tags=["角色"]
+    )
+    app.include_router(
+        menus.router,
+        prefix=f"{settings.API_V1_STR}/menus",
+        tags=["菜单"]
     )
 
 # 注册路由

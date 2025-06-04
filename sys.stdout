@@ -1538,3 +1538,59 @@ AvatarUrl
 2025-05-05 18:34:19.403 | INFO     | 用户创建成功: cc
 2025-05-05 18:34:19.403 | INFO     | 用户注册成功: cc
 2025-05-05 18:34:19.405 | INFO     | 请求处理完成: POST /api/v1/auth/register - 耗时: 263.22ms - 状态码: 200
+2025-05-18 11:39:06.529 | INFO     | 开始处理请求: GET /
+2025-05-18 11:39:06.598 | INFO     | 请求处理完成: GET / - 耗时: 67.93ms - 状态码: 200
+2025-05-18 11:39:06.884 | INFO     | 开始处理请求: GET /favicon.ico
+2025-05-18 11:39:06.885 | INFO     | 请求处理完成: GET /favicon.ico - 耗时: 1.0ms - 状态码: 404
+2025-05-18 11:39:11.547 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:39:11.550 | INFO     | 请求处理完成: GET /docs - 耗时: 2.52ms - 状态码: 200
+2025-05-18 11:39:53.994 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:39:53.996 | INFO     | 请求处理完成: GET /docs - 耗时: 1.53ms - 状态码: 200
+2025-05-18 11:40:04.815 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:40:04.821 | INFO     | 请求处理完成: GET /docs - 耗时: 6.1ms - 状态码: 200
+2025-05-18 11:40:18.182 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:40:18.183 | INFO     | 请求处理完成: GET /docs - 耗时: 1.01ms - 状态码: 200
+2025-05-18 11:40:23.661 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:40:23.663 | INFO     | 请求处理完成: GET /docs - 耗时: 1.11ms - 状态码: 200
+2025-05-18 11:40:39.383 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:40:39.384 | INFO     | 请求处理完成: GET /docs - 耗时: 0.59ms - 状态码: 200
+2025-05-18 11:41:44.951 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:41:44.952 | INFO     | 请求处理完成: GET /docs - 耗时: 1.0ms - 状态码: 200
+2025-05-18 11:42:44.114 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:42:44.145 | INFO     | 请求处理完成: GET /docs - 耗时: 31.13ms - 状态码: 200
+2025-05-18 11:42:50.544 | INFO     | 开始处理请求: GET /.well-known/appspecific/com.chrome.devtools.json
+2025-05-18 11:42:50.547 | INFO     | 请求处理完成: GET /.well-known/appspecific/com.chrome.devtools.json - 耗时: 2.0ms - 状态码: 404
+2025-05-18 11:48:04.078 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:48:04.081 | INFO     | 请求处理完成: GET /docs - 耗时: 3.39ms - 状态码: 200
+2025-05-18 11:48:04.103 | INFO     | 开始处理请求: GET /.well-known/appspecific/com.chrome.devtools.json
+2025-05-18 11:48:04.104 | INFO     | 请求处理完成: GET /.well-known/appspecific/com.chrome.devtools.json - 耗时: 1.0ms - 状态码: 404
+2025-05-18 11:48:13.606 | INFO     | 开始处理请求: GET /docs
+2025-05-18 11:48:13.608 | INFO     | 请求处理完成: GET /docs - 耗时: 2.0ms - 状态码: 200
+2025-05-18 11:48:15.863 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-05-18 11:48:15.899 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 35.25ms - 状态码: 200
+2025-05-18 14:05:05.013 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-18 14:05:05.044 | ERROR    | 数据验证错误
+2025-05-18 14:05:05.046 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 33.45ms - 状态码: 422
+2025-05-18 14:05:11.804 | INFO     | 开始处理请求: POST /api/v1/auth/login
+2025-05-18 14:05:11.807 | ERROR    | 数据验证错误
+2025-05-18 14:05:11.808 | INFO     | 请求处理完成: POST /api/v1/auth/login - 耗时: 4.79ms - 状态码: 422
+2025-05-18 14:20:40.211 | INFO     | 开始处理请求: OPTIONS /api/v1/analysis/userAccessSource
+2025-05-18 14:20:40.212 | INFO     | 请求处理完成: OPTIONS /api/v1/analysis/userAccessSource - 耗时: 1.0ms - 状态码: 400
+2025-05-18 14:20:40.217 | INFO     | 开始处理请求: OPTIONS /api/v1/analysis/weeklyUserActivity
+2025-05-18 14:20:40.217 | INFO     | 开始处理请求: OPTIONS /api/v1/analysis/monthlySales
+2025-05-18 14:20:40.217 | INFO     | 开始处理请求: OPTIONS /api/v1/analysis/total
+2025-05-18 14:20:40.218 | INFO     | 请求处理完成: OPTIONS /api/v1/analysis/weeklyUserActivity - 耗时: 0.99ms - 状态码: 400
+2025-05-18 14:20:40.218 | INFO     | 请求处理完成: OPTIONS /api/v1/analysis/monthlySales - 耗时: 0.99ms - 状态码: 400
+2025-05-18 14:20:40.219 | INFO     | 请求处理完成: OPTIONS /api/v1/analysis/total - 耗时: 0.99ms - 状态码: 400
+2025-06-04 22:32:42.755 | INFO     | 开始处理请求: GET /docs
+2025-06-04 22:32:42.762 | INFO     | 请求处理完成: GET /docs - 耗时: 5.99ms - 状态码: 200
+2025-06-04 22:32:45.082 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-06-04 22:32:45.176 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 92.42ms - 状态码: 200
+2025-06-04 22:35:33.962 | INFO     | 开始处理请求: GET /docs
+2025-06-04 22:35:33.963 | INFO     | 请求处理完成: GET /docs - 耗时: 1.0ms - 状态码: 200
+2025-06-04 22:35:34.167 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-06-04 22:35:34.217 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 49.88ms - 状态码: 200
+2025-06-04 23:00:02.476 | INFO     | 开始处理请求: GET /docs
+2025-06-04 23:00:02.478 | INFO     | 请求处理完成: GET /docs - 耗时: 2.0ms - 状态码: 200
+2025-06-04 23:00:02.595 | INFO     | 开始处理请求: GET /api/v1/openapi.json
+2025-06-04 23:00:02.661 | INFO     | 请求处理完成: GET /api/v1/openapi.json - 耗时: 66.26ms - 状态码: 200

@@ -1,11 +1,14 @@
 from typing import Any
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
+from aioredis.exceptions import RedisError
 
 from app.core.database import get_db_session
-from app.core.deps import get_current_user
+from app.core.deps import get_current_user,oauth2_scheme
+from app.core.response import response_manager
 from app.models.user import User
-from app.schemas.user import UserRegister, UserLogin, UserLoginResponse, UserBase
+from app.schemas.user import UserRegister, UserLogin, UserLoginResponse, UserBase, LogoutRequest
+from app.schemas.response import SuccessResponse
 from app.services.auth import auth_service
 from app.crud.user import user as crud_user
 from app.core.security import revoke_all_tokens
@@ -15,12 +18,12 @@ from app.exceptions.base import ValidationError
 router = APIRouter() 
 logger = get_logger(__name__)
 
-@router.post("/register", response_model=UserBase, status_code=status.HTTP_201_CREATED)
+@router.post("/register", response_model=SuccessResponse[UserBase])
 async def register(
     *,
     db: Session = Depends(get_db_session),
     user_in: UserRegister
-) -> UserBase:
+) -> SuccessResponse[UserBase]:
     """
     用户注册
     """
@@ -33,14 +36,14 @@ async def register(
     # 创建用户
     user = await crud_user.create(db, obj_in=user_in)
     logger.info(f"用户注册成功: {user.UserName}")
-    return user
+    return response_manager.created(data=user, message="用户注册成功")
 
-@router.post("/login", response_model=UserLoginResponse)
+@router.post("/login", response_model=SuccessResponse[UserLoginResponse])
 async def login(
     *,
     db: Session = Depends(get_db_session),
     login_data: UserLogin
-) -> UserLoginResponse:
+) -> SuccessResponse[UserLoginResponse]:
     """
     用户登录
     - 验证用户凭据
@@ -54,7 +57,7 @@ async def login(
     user = await auth_service.authenticate(db, login_data)
     await revoke_all_tokens(user.Id)
     
-    return login_response
+    return response_manager.success(data=login_response, message="登录成功")
 
 @router.post("/logout")
 async def logout(

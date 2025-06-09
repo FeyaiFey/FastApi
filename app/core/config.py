@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     )
     
     # 项目基本信息
-    PROJECT_NAME: str = "FastAPI Project"
+    PROJECT_NAME: str = "华芯微FastAPI项目"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api/v1"
     DEBUG: bool = True
@@ -65,13 +65,7 @@ class Settings(BaseSettings):
     # JWT配置
     SECRET_KEY: str = secrets.token_urlsafe(32)
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24  # 24 小时
-    
-    # CORS配置
-    CORS_ORIGINS: List[str] = ["*"]
-    CORS_CREDENTIALS: bool = True
-    CORS_METHODS: List[str] = ["*"]
-    CORS_HEADERS: List[str] = ["*"]
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 3600  # 1小时
     
     # 静态文件配置
     STATIC_URL: str = "/static"
@@ -124,13 +118,3 @@ def get_logging_config() -> Dict[str, Any]:
 def get_database_url() -> str:
     """获取数据库URL"""
     return settings.DATABASE_URL
-
-# CORS配置
-def get_cors_config() -> Dict[str, Any]:
-    """获取CORS配置"""
-    return {
-        "allow_origins": settings.CORS_ORIGINS,
-        "allow_credentials": settings.CORS_CREDENTIALS,
-        "allow_methods": settings.CORS_METHODS,
-        "allow_headers": settings.CORS_HEADERS,
-    } 

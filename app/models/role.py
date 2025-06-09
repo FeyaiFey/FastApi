@@ -12,4 +12,14 @@ class Role(BaseModel):
     Status = Column(String(50), nullable=False, default="1", comment="状态:0-禁用;1-启用")
 
     # 关系
-    users = relationship("User", back_populates="role") 
+    users = relationship("User", back_populates="role")
+    
+    # 多对多关系：角色可以拥有多个菜单
+    menus = relationship(
+        "Menu", 
+        secondary="hRoleMenu", 
+        back_populates="roles",
+        primaryjoin="Role.Id == RoleMenu.RoleId",
+        secondaryjoin="Menu.MenuId == RoleMenu.MenuId",
+        viewonly=True
+    ) 

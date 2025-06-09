@@ -13,12 +13,16 @@ class MenuBase(BaseModel):
     Name: str = Field(..., min_length=1, max_length=100, description="路由名称")
     Title: Optional[str] = Field(None, max_length=255, description="菜单标题")
     Icon: Optional[str] = Field(None, max_length=255, description="菜单图标")
+    Hidden: Optional[bool] = Field(False, description="是否隐藏")
     AlwaysShow: Optional[bool] = Field(False, description="是否总是显示")
     NoCache: Optional[bool] = Field(False, description="是否不缓存")
+    Breadcrumb: Optional[bool] = Field(True, description="是否显示面包屑")
     Affix: Optional[bool] = Field(False, description="是否固定标签")
-    Hidden: Optional[bool] = Field(False, description="是否隐藏")
+    ActiveMenu: Optional[str] = Field(None, max_length=255, description="激活菜单路径")
+    NoTagsView: Optional[bool] = Field(False, description="是否不显示标签视图")
+    CanTo: Optional[bool] = Field(True, description="是否可以跳转")
+    Permission: Optional[List[str]] = Field(None, description="权限标识数组")
     ExternalLink: Optional[str] = Field(None, max_length=255, description="外部链接")
-    Permission: Optional[str] = Field(None, description="权限标识")
     MenuOrder: Optional[int] = Field(0, description="菜单排序")
 
 class MenuCreate(BaseModel):
@@ -31,12 +35,16 @@ class MenuCreate(BaseModel):
     Name: str = Field(..., min_length=1, max_length=100, description="路由名称")
     Title: Optional[str] = Field(None, max_length=255, description="菜单标题")
     Icon: Optional[str] = Field(None, max_length=255, description="菜单图标")
+    Hidden: Optional[bool] = Field(False, description="是否隐藏")
     AlwaysShow: Optional[bool] = Field(False, description="是否总是显示")
     NoCache: Optional[bool] = Field(False, description="是否不缓存")
+    Breadcrumb: Optional[bool] = Field(True, description="是否显示面包屑")
     Affix: Optional[bool] = Field(False, description="是否固定标签")
-    Hidden: Optional[bool] = Field(False, description="是否隐藏")
+    ActiveMenu: Optional[str] = Field(None, max_length=255, description="激活菜单路径")
+    NoTagsView: Optional[bool] = Field(False, description="是否不显示标签视图")
+    CanTo: Optional[bool] = Field(True, description="是否可以跳转")
+    Permission: Optional[List[str]] = Field(None, description="权限标识数组")
     ExternalLink: Optional[str] = Field(None, max_length=255, description="外部链接")
-    Permission: Optional[str] = Field(None, description="权限标识")
     MenuOrder: Optional[int] = Field(0, description="菜单排序")
 
 class MenuUpdate(BaseModel):
@@ -48,12 +56,16 @@ class MenuUpdate(BaseModel):
     Name: Optional[str] = Field(None, min_length=1, max_length=100, description="路由名称")
     Title: Optional[str] = Field(None, max_length=255, description="菜单标题")
     Icon: Optional[str] = Field(None, max_length=255, description="菜单图标")
+    Hidden: Optional[bool] = Field(None, description="是否隐藏")
     AlwaysShow: Optional[bool] = Field(None, description="是否总是显示")
     NoCache: Optional[bool] = Field(None, description="是否不缓存")
+    Breadcrumb: Optional[bool] = Field(None, description="是否显示面包屑")
     Affix: Optional[bool] = Field(None, description="是否固定标签")
-    Hidden: Optional[bool] = Field(None, description="是否隐藏")
+    ActiveMenu: Optional[str] = Field(None, max_length=255, description="激活菜单路径")
+    NoTagsView: Optional[bool] = Field(None, description="是否不显示标签视图")
+    CanTo: Optional[bool] = Field(None, description="是否可以跳转")
+    Permission: Optional[List[str]] = Field(None, description="权限标识数组")
     ExternalLink: Optional[str] = Field(None, max_length=255, description="外部链接")
-    Permission: Optional[str] = Field(None, description="权限标识")
     MenuOrder: Optional[int] = Field(None, description="菜单排序")
 
 class MenuInDB(MenuBase):
@@ -80,12 +92,16 @@ class MenuTree(BaseModel):
     Name: str
     Title: Optional[str] = None
     Icon: Optional[str] = None
+    Hidden: Optional[bool] = False
     AlwaysShow: Optional[bool] = False
     NoCache: Optional[bool] = False
+    Breadcrumb: Optional[bool] = True
     Affix: Optional[bool] = False
-    Hidden: Optional[bool] = False
+    ActiveMenu: Optional[str] = None
+    NoTagsView: Optional[bool] = False
+    CanTo: Optional[bool] = True
+    Permission: Optional[List[str]] = None
     ExternalLink: Optional[str] = None
-    Permission: Optional[str] = None
     MenuOrder: Optional[int] = 0
     CreatedAt: datetime
     UpdatedAt: Optional[datetime] = None

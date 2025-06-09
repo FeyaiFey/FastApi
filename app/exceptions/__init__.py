@@ -1,27 +1,36 @@
+"""
+异常处理模块
+
+提供统一的异常类定义和异常处理器注册
+"""
+
 from fastapi import FastAPI
-from fastapi.exceptions import RequestValidationError
-from pydantic import ValidationError as PydanticValidationError
-from sqlalchemy.exc import SQLAlchemyError
-from app.exceptions.base import BaseAPIException
-from app.exceptions.handlers import (
-    base_exception_handler,
-    validation_exception_handler,
-    sqlalchemy_exception_handler,
-    general_exception_handler
+from app.core.exceptions import register_exception_handlers as _register_handlers
+
+# 导入异常类，供其他模块使用
+from app.exceptions.base import (
+    BaseAPIException,
+    ValidationError,
+    AuthenticationError, 
+    AuthorizationError,
+    PermissionError,
+    NotFoundError,
+    DatabaseError,
+    BaseException  # 向后兼容别名
 )
 
 def register_exception_handlers(app: FastAPI) -> None:
     """注册异常处理器"""
-    
-    # 注册基础API异常处理器
-    app.add_exception_handler(BaseAPIException, base_exception_handler)
-    
-    # 注册数据验证异常处理器
-    app.add_exception_handler(RequestValidationError, validation_exception_handler)
-    app.add_exception_handler(PydanticValidationError, validation_exception_handler)
-    
-    # 注册数据库异常处理器
-    app.add_exception_handler(SQLAlchemyError, sqlalchemy_exception_handler)
-    
-    # 注册通用异常处理器
-    app.add_exception_handler(Exception, general_exception_handler) 
+    _register_handlers(app)
+
+__all__ = [
+    "register_exception_handlers",
+    "BaseAPIException", 
+    "ValidationError",
+    "AuthenticationError",
+    "AuthorizationError", 
+    "PermissionError",
+    "NotFoundError",
+    "DatabaseError",
+    "BaseException"
+] 

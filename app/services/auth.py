@@ -5,7 +5,8 @@ from app.models.user import User
 from app.schemas.user import UserLogin, UserLoginResponse, UserInfo
 from app.crud.auth import auth as crud_auth
 from app.crud.department import department as crud_department
-from app.core.security import create_access_token
+from app.crud.role import role as crud_role
+from app.core.security import create_access_token,revoke_all_tokens
 from app.core.config import settings
 from app.core.logger import get_logger
 from app.core.token_manager import token_manager
@@ -44,6 +45,9 @@ class AuthService:
         # 验证用户
         user = await self.authenticate(db, login_data)
         
+        # 撤销之前的令牌
+        await revoke_all_tokens(user.Id)
+        
         # 创建访问令牌
         token_data = await self.create_access_token(user)
         
@@ -55,15 +59,25 @@ class AuthService:
 
         # 获取用户部门
         department = await crud_department.get_by_id(db, user.DepartmentId)
+        
+        # 获取用户角色
+        role = await crud_role.get_by_id(db, user.RoleId)
 
-        # 创建登录响应
-        response = UserLoginResponse(
+        # 创建用户信息对象
+        user_info = UserInfo(
             Id=user.Id,
             UserName=user.UserName,
             Email=user.Email,
+            DepartmentId=user.DepartmentId,
+            RoleId=user.RoleId,
             DepartmentName=department.DepartmentName,
-            Role=user.Role,
-            AvatarUrl=user.AvatarUrl,
+            RoleName=role.RoleName,
+            AvatarUrl=user.AvatarUrl
+        )
+
+        # 创建登录响应
+        response = UserLoginResponse(
+            userInfo=user_info,
             token=token_data["access_token"]
         )
 
@@ -79,4 +93,4 @@ class AuthService:
         """验证token是否有效"""
         return await token_manager.validate_token(user_id, token)
 
-auth_service = AuthService() 
+auth_service = AuthService()

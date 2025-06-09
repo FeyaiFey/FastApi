@@ -6,6 +6,9 @@ from passlib.context import CryptContext
 from app.core.config import settings
 from app.core.redis import redis_client
 import uuid
+from app.core.logger import get_logger
+
+logger = get_logger(__name__)
 
 # 配置密码哈希上下文
 pwd_context = CryptContext(
@@ -108,19 +111,28 @@ async def revoke_token(token: str) -> bool:
     return False
 
 async def revoke_all_tokens(user_id: Union[str, int]) -> None:
-    """撤销用户的所有令牌"""
-    # 获取用户的所有令牌键
-    pattern = f"token:*"
-    async for key in redis_client.scan_iter(pattern):
-        try:
-            token = await redis_client.get(key)
-            if token:
-                payload = jwt.decode(
-                    token,
-                    settings.SECRET_KEY,
-                    algorithms=[settings.ALGORITHM]
-                )
-                if str(payload.get("sub")) == str(user_id):
-                    await redis_client.delete(key)
-        except JWTError:
-            continue 
+    """
+    撤销用户的所有令牌
+    - 获取用户的所有令牌
+    - 从Redis中删除这些令牌
+    - 处理Redis连接错误
+    """
+    try:
+        # 获取用户的所有令牌键
+        pattern = f"token:*"
+        async for key in redis_client.scan_iter(pattern):
+            try:
+                token = await redis_client.get(key)
+                if token:
+                    payload = jwt.decode(
+                        token,
+                        settings.SECRET_KEY,
+                        algorithms=[settings.ALGORITHM]
+                    )
+                    if str(payload.get("sub")) == str(user_id):
+                        await redis_client.delete(key)
+            except (JWTError, Exception) as e:
+                continue
+    except Exception as e:
+        logger.error(f"撤销令牌失败: {str(e)}")
+        raise ConnectionError("令牌服务暂时不可用") from e 

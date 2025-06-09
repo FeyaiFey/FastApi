@@ -17,6 +17,7 @@ class DepartmentTree(BaseModel):
     Id: UUID = Field(..., description="部门ID")
     DepartmentName: str = Field(..., description="部门名称")
     Children: Optional[List["DepartmentTree"]] = Field(default=None, description="子部门列表")
+    
 class DepartmentCreate(BaseModel):
     """部门创建模型"""
     name: str = Field(..., description="部门名称")

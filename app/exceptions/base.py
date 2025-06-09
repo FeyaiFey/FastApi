@@ -47,6 +47,21 @@ class AuthenticationError(BaseAPIException):
             headers=headers
         )
 
+class AuthorizationError(BaseAPIException):
+    """授权错误"""
+    def __init__(
+        self,
+        message: str = "权限不足",
+        data: Any = None,
+        headers: Optional[Dict[str, str]] = None
+    ):
+        super().__init__(
+            status_code=status.HTTP_403_FORBIDDEN,
+            message=message,
+            data=data,
+            headers=headers
+        )
+
 class PermissionError(BaseAPIException):
     """权限错误"""
     def __init__(
@@ -90,4 +105,7 @@ class DatabaseError(BaseAPIException):
             message=message,
             data=data,
             headers=headers
-        ) 
+        )
+
+# 为了向后兼容，创建别名
+BaseException = BaseAPIException 

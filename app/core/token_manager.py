@@ -9,7 +9,8 @@ class TokenManager:
     def __init__(self):
         self.redis = redis_client
         self.token_prefix = "user_token:"
-        self.token_expire = settings.ACCESS_TOKEN_EXPIRE_MINUTES * 60  # 转换为秒
+        self.token_expire = 3600  # 转换为秒
+        logger.info(f"TokenManager初始化完成，token过期时间: {self.token_expire}秒")
 
     def _get_token_key(self, user_id: str) -> str:
         """获取Redis中的token键"""
@@ -28,7 +29,7 @@ class TokenManager:
                 token,
                 ex=self.token_expire
             )
-            logger.info(f"用户 {user_id} 的token已存储")
+            logger.info(f"用户 {user_id} 的token已存储,token有效期{self.token_expire}秒")
         except Exception as e:
             logger.error(f"存储token失败: {str(e)}")
             raise

@@ -11,7 +11,7 @@ class BaseModel(Base):
 
     Id = Column(UNIQUEIDENTIFIER, primary_key=True, default=uuid.uuid1, index=True)
     CreatedAt = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
-    UpdatedAt = Column(DateTime(timezone=True), onupdate=func.now(), nullable=True)
+    UpdatedAt = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=False)
 
     def to_dict(self):
         """将模型转换为字典"""

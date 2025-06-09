@@ -7,7 +7,7 @@ from datetime import datetime
 from app.models.user import User
 from app.models.role import Role
 from app.models.department import Department
-from app.schemas.user import UserRegister, UserCreate, UserUpdate
+from app.schemas.user import UserRegister, UserCreate, UserUpdate,UserInfo
 from app.core.security import get_password_hash
 from app.core.logger import get_logger
 from app.core.config import settings
@@ -83,7 +83,7 @@ class CRUDUser:
             logger.error(f"查询用户列表失败: {str(e)}")
             raise DatabaseError("查询用户列表失败")
     
-    async def create(self, db: Session, *, obj_in: UserRegister, default_role_id: uuid.UUID) -> Optional[User]:
+    async def create(self, db: Session, *, obj_in: UserRegister) -> Optional[User]:
         """
         创建用户
         :param db: 数据库会话
@@ -98,9 +98,9 @@ class CRUDUser:
                 Email=obj_in.Email,
                 PasswordHash=await get_password_hash(obj_in.Password),
                 DepartmentId=obj_in.DepartmentId,
-                RoleId=getattr(obj_in, 'RoleId', default_role_id),  # 使用传入的角色ID或默认角色ID
+                RoleId="24EAFD77-81D8-4DB9-8867-BB3F4A823B36",  # 使用传入的角色ID或默认角色ID
                 Status="1",  # 默认启用
-                AvatarUrl=settings.HOST + '/static/uploads/avatars/default.png',
+                AvatarUrl='http://127.0.0.1:8000/static/uploads/avatars/default.png',
                 CreatedAt=datetime.now(),
                 UpdatedAt=datetime.now()
             )
@@ -199,13 +199,14 @@ class CRUDUser:
         更新用户头像
         :param db: 数据库会话
         :param id: 用户ID
-        :param avatar_url: 新头像URL
+        :param avatar_url: 头像URL
         :return: 更新后的用户对象
         """
         try:
-            user = db.query(User).get(id)
+            user = db.query(User).filter(User.Id == id).first()
             if not user:
                 raise NotFoundError(f"用户不存在: {id}")
+            
             user.AvatarUrl = avatar_url
             user.UpdatedAt = datetime.now()
             db.commit()
@@ -218,5 +219,17 @@ class CRUDUser:
             logger.error(f"更新用户头像失败: {str(e)}")
             db.rollback()
             raise DatabaseError("更新用户头像失败")
+    
+    async def count(self, db: Session) -> int:
+        """
+        获取用户总数
+        :param db: 数据库会话
+        :return: 用户总数
+        """
+        try:
+            return db.query(User).count()
+        except SQLAlchemyError as e:
+            logger.error(f"统计用户数量失败: {str(e)}")
+            raise DatabaseError("统计用户数量失败")
 
 user = CRUDUser() 

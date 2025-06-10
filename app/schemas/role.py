@@ -1,7 +1,5 @@
 from typing import Optional
 from pydantic import BaseModel, Field
-from datetime import datetime
-import uuid
 
 class RoleBase(BaseModel):
     """角色基础模型"""

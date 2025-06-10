@@ -9,6 +9,14 @@ from app.core.logger import get_logger
 
 logger = get_logger(__name__)
 
+def get_token_expire_minutes() -> int:
+    """获取令牌过期时间（分钟）"""
+    try:
+        return int(os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES', '10'))  # 默认30天
+    except ValueError as e:
+        logger.error(f"令牌过期时间配置错误: {str(e)}")
+        return 10  # 如果配置错误，使用默认值30天
+
 # 配置密码哈希上下文
 pwd_context = CryptContext(
     schemes=["bcrypt"],
@@ -32,7 +40,7 @@ async def create_access_token(
         expire = datetime.now(timezone.utc) + expires_delta
     else:
         expire = datetime.now(timezone.utc) + timedelta(
-            minutes=os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES")
+            minutes=get_token_expire_minutes()
         )
     
     # 生成唯一的会话ID
@@ -48,16 +56,8 @@ async def create_access_token(
     # 生成JWT令牌
     encoded_jwt = jwt.encode(
         to_encode,
-        os.getenv("SECRET_KEY"),
-        algorithm=os.getenv("ALGORITHM")
-    )
-    
-    # 将令牌信息存储到Redis
-    redis_key = f"token:{session_id}"
-    await redis_client.setex(
-        redis_key,
-        os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES") * 60,  # 转换为秒
-        encoded_jwt
+        os.getenv('SECRET_KEY', '09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7'),
+        algorithm=os.getenv('ALGORITHM', 'HS256')
     )
     
     return encoded_jwt
@@ -68,8 +68,8 @@ async def verify_token(token: str) -> Optional[dict]:
         # 解码JWT令牌
         payload = jwt.decode(
             token,
-            os.getenv("SECRET_KEY"),
-            algorithm=os.getenv("ALGORITHM")
+            os.getenv('SECRET_KEY','09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7'),
+            algorithm=os.getenv('ALGORITHM','HS256')
         )
         
         # 获取会话ID
@@ -95,8 +95,8 @@ async def revoke_token(token: str) -> bool:
         # 解码令牌获取会话ID
         payload = jwt.decode(
             token,
-            os.getenv("SECRET_KEY"),
-            algorithm=os.getenv("ALGORITHM")
+            os.getenv('SECRET_KEY','09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7'),
+            algorithm=os.getenv('ALGORITHM','HS256')
         )
         session_id = payload.get("session_id")
         
@@ -125,8 +125,8 @@ async def revoke_all_tokens(user_id: Union[str, int]) -> None:
                 if token:
                     payload = jwt.decode(
                         token,
-                        os.getenv("SECRET_KEY"),
-                        algorithm=os.getenv("ALGORITHM")
+                        os.getenv('SECRET_KEY','09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7'),
+                        algorithm=os.getenv('ALGORITHM','HS256')
                     )
                     if str(payload.get("sub")) == str(user_id):
                         await redis_client.delete(key)

@@ -4,8 +4,8 @@ from celery import Celery
 # 创建 Celery 实例
 celery_app = Celery(
     "worker",
-    broker=os.getenv("CELERY_BROKER_URL"),
-    backend=os.getenv("CELERY_RESULT_BACKEND"),
+    broker=os.getenv('CELERY_BROKER_URL','redis://localhost:6379/0'),
+    backend=os.getenv('CELERY_RESULT_BACKEND','redis://localhost:6379/0'),
     include=["app.tasks"]  # 包含任务模块
 )
 

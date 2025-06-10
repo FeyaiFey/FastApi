@@ -6,21 +6,35 @@ from sqlalchemy.orm import sessionmaker, Session, declarative_base
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.pool import QueuePool
 from app.core.logger import get_logger
-import logging
 
 # 配置日志
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
+
+def str_to_bool(value: str) -> bool:
+    """将字符串转换为布尔值"""
+    return str(value).lower() in ('true', '1', 'yes', 'on')
+
+conn_str = (
+    f"DRIVER={os.getenv('DB_DRIVER','ODBC Driver 18 for SQL Server')};"
+    f"SERVER={os.getenv('DB_SERVER','localhost')};"
+    f"DATABASE={os.getenv('DB_DATABASE','E10')};"
+    f"UID={os.getenv('DB_USER','sa')};"
+    f"PWD={os.getenv('DB_PASSWORD','123456')};"
+    f"TrustServerCertificate=yes;"
+    f"Connection Timeout={os.getenv('DB_CONNECTION_TIMEOUT',30)};"
+    f"Command Timeout={os.getenv('DB_COMMAND_TIMEOUT',60)};"
+)
 
 # 创建数据库引擎
 engine = create_engine(
-    os.getenv("DATABASE_URL"),
+    f"mssql+pyodbc:///?odbc_connect={conn_str}",
     poolclass=QueuePool,
-    pool_size=os.getenv("POOL_SIZE"),
-    max_overflow=os.getenv("MAX_OVERFLOW"),
-    pool_timeout=os.getenv("POOL_TIMEOUT"),
-    pool_recycle=os.getenv("POOL_RECYCLE"),
-    pool_pre_ping=os.getenv("POOL_PRE_PING"),
-    echo=os.getenv("SQL_DEBUG")
+    pool_size=int(os.getenv('POOL_SIZE', '5')),
+    max_overflow=int(os.getenv('MAX_OVERFLOW', '10')),
+    pool_timeout=int(os.getenv('POOL_TIMEOUT', '30')),
+    pool_recycle=int(os.getenv('POOL_RECYCLE', '1800')),
+    pool_pre_ping=str_to_bool(os.getenv('POOL_PRE_PING', 'True')),
+    echo=str_to_bool(os.getenv('SQL_DEBUG', 'False'))
 )
 
 # 创建会话工厂

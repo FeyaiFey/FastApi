@@ -2,6 +2,7 @@ import os
 from typing import Optional
 from app.core.redis import redis_client
 from app.core.logger import get_logger
+from app.core.security import get_token_expire_minutes
 
 logger = get_logger(__name__)
 
@@ -9,7 +10,7 @@ class TokenManager:
     def __init__(self):
         self.redis = redis_client
         self.token_prefix = "user_token:"
-        self.token_expire = os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES") * 60 # 转换为秒
+        self.token_expire = get_token_expire_minutes() * 60  # 转换为秒
 
     def _get_token_key(self, user_id: str) -> str:
         """获取Redis中的token键"""

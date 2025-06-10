@@ -6,12 +6,12 @@ from jose import jwt, JWTError
 from sqlalchemy.orm import Session
 from app.core.database import get_db, get_db_session
 from app.models.user import User
-from app.services import auth_service
+from app.services.auth import auth_service
 from app.core.logger import get_logger
 
 logger = get_logger(__name__)
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl=f"{os.getenv("API_V1_STR")}/auth/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=f"{os.getenv('API_V1_STR','/api/v1')}/auth/login")
 
 async def get_current_user(
     db: Session = Depends(get_db_session),
@@ -33,8 +33,8 @@ async def get_current_user(
         # 解码JWT token
         payload = jwt.decode(
             token,
-            os.getenv("SECRET_KEY"),
-            algorithms=[os.getenv("ALGORITHM")]
+            os.getenv('SECRET_KEY','09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7'),
+            algorithms=[os.getenv('ALGORITHM','HS256')]
         )
         user_id: str = payload.get("sub")
         if user_id is None:

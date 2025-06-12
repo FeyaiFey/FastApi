@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from app.models.user import User
 from app.core.security import verify_password
-from app.crud.user import user as crud_user
+from app.crud.user import user_crud
 from app.core.database import get_db
 from app.core.logger import get_logger
 from app.core.exceptions import (
@@ -25,7 +25,7 @@ class CRUDAuth:
         :raises: AuthenticationException, DatabaseException
         """
         try:
-            user = await crud_user.get_by_email(db, email=email)
+            user = await user_crud.get_by_email(db, email=email)
             if not user:
                 logger.warning(f"用户邮箱不存在: {email}")
                 raise AuthenticationException("用户名或密码错误")
@@ -51,4 +51,4 @@ class CRUDAuth:
         """
         return user.Status == "1"
 
-auth = CRUDAuth() 
+auth_crud = CRUDAuth() 

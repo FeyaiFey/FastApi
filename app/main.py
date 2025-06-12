@@ -12,7 +12,7 @@ from app.core.exceptions import (
     internal_exception_handler
 )
 from app.schemas.response import ResponseHandler
-from app.api.v1.endpoints import auth, departments, roles, users
+from app.api.v1.endpoints import auth, departments, roles, users, email
 
 # 创建logger实例
 logger = get_logger(name="main")
@@ -52,6 +52,7 @@ app.include_router(auth.router, prefix=f"{os.getenv('API_V1_STR', '/api/v1')}/au
 app.include_router(users.router, prefix=f"{os.getenv('API_V1_STR', '/api/v1')}/users", tags=["用户"])
 app.include_router(departments.router, prefix=f"{os.getenv('API_V1_STR', '/api/v1')}/departments", tags=["部门"])
 app.include_router(roles.router, prefix=f"{os.getenv('API_V1_STR', '/api/v1')}/roles", tags=["角色"])
+app.include_router(email.router, prefix=f"{os.getenv('API_V1_STR', '/api/v1')}/email", tags=["邮箱"])
 
 @app.get("/")
 async def read_root():

@@ -51,3 +51,16 @@ class UserUpdate(BaseModel):
 
     class Config:
         from_attributes = True
+
+# 用户密码更新请求
+class UserPasswordUpdateRequest(BaseModel):
+    """用户密码更新请求"""
+    OldPassword: str = Field(..., min_length=6, max_length=50)
+    NewPassword: str = Field(..., min_length=6, max_length=50)
+    ConfirmPassword: str = Field(..., min_length=6, max_length=50)
+
+# 更新信息更新
+class UserInfoUpdateRequest(BaseModel):
+    """更新信息更新"""
+    UserName: Optional[str] = Field(None, min_length=1, max_length=50, description="用户名")
+    Email: Optional[EmailStr] = Field(None, description="邮箱")

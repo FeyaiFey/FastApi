@@ -42,4 +42,4 @@ class RoleCRUD:
             logger.error(f"查询角色失败: {str(e)}")
             raise BadRequestException("查询角色失败，请稍后重试")
 
-role = RoleCRUD()
+role_crud = RoleCRUD()

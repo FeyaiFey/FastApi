@@ -87,4 +87,4 @@ class CRUDDepartment:
             logger.error(f"获取部门树失败: {str(e)}")
             raise BadRequestException("获取部门树失败，请稍后重试")
 
-department = CRUDDepartment() 
+department_crud = CRUDDepartment() 

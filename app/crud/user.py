@@ -6,7 +6,7 @@ from datetime import datetime
 
 from app.models.user import User
 from app.models.role import Role
-from app.crud.role import role as crud_role
+from app.crud.role import role_crud
 from app.schemas.user import UserRegister, UserCreate, UserUpdate
 from app.core.security import get_password_hash
 from app.core.logger import get_logger
@@ -107,7 +107,7 @@ class CRUDUser:
             if existing_user:
                 raise BadRequestException("该邮箱已被注册")
             
-            role = await crud_role.get_by_name(db, name="普通用户")
+            role = await role_crud.get_by_name(db, name="普通用户")
             if not role:
                 raise BadRequestException("角色不存在")
 
@@ -266,4 +266,4 @@ class CRUDUser:
             logger.error(f"统计用户数量失败: {str(e)}")
             raise BadRequestException("统计用户数量失败，请稍后重试")
 
-user = CRUDUser() 
+user_crud = CRUDUser() 

@@ -4,9 +4,9 @@ from aioredis.exceptions import RedisError
 
 from app.models.user import User
 from app.schemas.user import UserLogin, UserLoginResponse, UserInfo
-from app.crud.auth import auth as crud_auth
-from app.crud.department import department as crud_department
-from app.crud.role import role as crud_role
+from app.crud.auth import auth_crud
+from app.crud.department import department_crud
+from app.crud.role import role_crud
 from app.core.security import create_access_token, revoke_all_tokens, get_token_expire_minutes
 from app.core.logger import get_logger
 from app.core.token import token_manager
@@ -23,7 +23,7 @@ class AuthService:
         验证用户登录
         :raises: AuthenticationException, DatabaseException
         """
-        return await crud_auth.authenticate(
+        return await auth_crud.authenticate(
             db, 
             email=login_data.Email, 
             password=login_data.Password
@@ -71,8 +71,8 @@ class AuthService:
                 raise BusinessException("存储token失败")
 
             # 获取用户部门和角色
-            department = await crud_department.get_by_id(db, user.DepartmentId)
-            role = await crud_role.get_by_id(db, user.RoleId)
+            department = await department_crud.get_by_id(db, user.DepartmentId)
+            role = await role_crud.get_by_id(db, user.RoleId)
 
             if not department or not role:
                 raise BusinessException("获取用户信息失败")

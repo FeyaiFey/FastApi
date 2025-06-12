@@ -7,7 +7,7 @@ from app.core.deps import get_current_user,oauth2_scheme
 from app.models.user import User
 from app.schemas.user import UserRegister, UserLogin, UserLoginResponse, UserBase
 from app.services.auth import auth_service
-from app.crud.user import user as crud_user
+from app.crud.user import user_crud
 from app.core.logger import get_logger
 from app.core.exceptions import (
     BadRequestException,
@@ -29,13 +29,13 @@ async def register(
     """
     try:
         # 检查邮箱是否已存在
-        user = await crud_user.get_by_email(db, email=user_in.Email)
+        user = await user_crud.get_by_email(db, email=user_in.Email)
         if user:
             logger.warning(f"注册失败: 邮箱已存在 - {user_in.Email}")
             raise BadRequestException("该邮箱已被注册")
         
         # 创建用户
-        user = await crud_user.create(db, obj_in=user_in)
+        user = await user_crud.create(db, obj_in=user_in)
         logger.info(f"用户注册成功: {user.UserName}")
         return ResponseHandler.success(
             data=user,

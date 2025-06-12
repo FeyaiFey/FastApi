@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 import json
 
 from app.models.role import Role
-from app.crud.role import role as crud_role
+from app.crud.role import role_crud
 from app.schemas.roleMenu import RouteItem, RouteMeta
 from app.models.role_menu import RoleMenu
 from app.models.menu import Menu
@@ -18,7 +18,7 @@ logger = get_logger("role.service")
 class RoleService:
     async def get_role_by_id(self, db: Session, role_id: UUID) -> Optional[Role]:
         """根据ID获取角色"""
-        return await crud_role.get_by_id(db, role_id)
+        return await role_crud.get_by_id(db, role_id)
     
     async def get_role_menus(self, db: Session, role_id: UUID) -> List[RouteItem]:
         """获取角色的菜单路由"""
